@@ -1,7 +1,7 @@
 {
     "sources": [
         {
-            "source": 'Manga Host',
+            "source": "Manga Host",
             "raw":"https://raw.githubusercontent.com/Manga-Hub-Org/main/main/plugins/mangahost.js"
         }
     ]
