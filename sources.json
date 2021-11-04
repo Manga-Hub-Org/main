@@ -2,7 +2,26 @@
     "sources": [
         {
             "source": "Manga Host",
-            "raw":"https://raw.githubusercontent.com/Manga-Hub-Org/main/main/plugins/mangahost.js"
+            "icon": "https://mangahost4.com/wp-content/themes/mangahost/img/favicon.png",
+            "url": "https://raw.githubusercontent.com/Manga-Hub-Org/main/main/plugins/mangahost.js"
+        },
+        
+        {
+            "source": "MangaYabu",
+            "icon": "https://i.pinimg.com/favicons/238fc9a04f63a914b8fbd65ef0309f5768b628e815c631572d7c0938.png?48b0192ec9ffa56eb23166bed994a5e0"
+            "url": ""
+        },
+        
+        {
+            "source": "Tsuki Mangas",
+            "icon": "https://tsukimangas.com/ext/logoc.png",
+            "url": ""
+        },
+        
+        {
+            "source": "Manga Livre",
+            "icon": "http://mangalivre.net/assets/images/icon-facebook.png",
+            "url": ""
         }
     ]
 }
