@@ -1,5 +1,6 @@
 module.exports = {
     source: 'Manga Host',
+    icon: 'https://mangahost4.com/wp-content/themes/mangahost/img/favicon.png',
     run: (modules) => {
         const request = modules.web({ cloudflare: true })
 
