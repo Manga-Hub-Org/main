@@ -7,15 +7,15 @@ module.exports = {
         return {
             chapter: (chapter, callback) => {
                 let pages = []
-                Request(chapter).then(response => {
-                    Parser(response).querySelectorAll('#slider > a > picture > img').forEach(r => pages.push(r.src))
+                request(chapter, (err, response, body) => {
+                    modules.parse(body).querySelectorAll('#slider > a > picture > img').forEach(r => pages.push(r.src))
                     callback(pages)
                 })
             },
     
             item: (id, callback) => {
-                Request(id).then(response => {
-                    let doc = Parser(response)
+                request(id, (err, response, body) => {
+                    let doc = modules.parse(body)
                     let chapters = []
                     let synopsis = ''
                     doc.querySelectorAll('.paragraph > p').forEach(r => synopsis = synopsis + r.textContent)
