@@ -9,19 +9,19 @@
         {
             "source": "MangaYabu",
             "icon": "https://i.pinimg.com/favicons/238fc9a04f63a914b8fbd65ef0309f5768b628e815c631572d7c0938.png?48b0192ec9ffa56eb23166bed994a5e0"
-            "url": ""
+            "url": "https://github.com/Manga-Hub-Org/main/blob/main/plugins/mangayabu.js"
         },
         
         {
             "source": "Tsuki Mangas",
             "icon": "https://tsukimangas.com/ext/logoc.png",
-            "url": ""
+            "url": "https://github.com/Manga-Hub-Org/main/blob/main/plugins/tsukimangas.js"
         },
         
         {
             "source": "Manga Livre",
             "icon": "http://mangalivre.net/assets/images/icon-facebook.png",
-            "url": ""
+            "url": "https://github.com/Manga-Hub-Org/main/blob/main/plugins/mangalivre.js"
         }
     ]
 }
