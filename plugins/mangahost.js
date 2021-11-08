@@ -8,7 +8,7 @@ module.exports = {
             chapter: (chapter, callback) => {
                 let pages = []
                 request(chapter, (err, response, body) => {
-                    modules.parse(body).querySelectorAll('#slider > a > picture > img').forEach(r => pages.push(r.src))
+                    modules.parse(body).querySelectorAll('#slider > a > picture > img').forEach(r => pages.push(r.getAttribute('src')))
                     callback(pages)
                 })
             },
@@ -19,9 +19,14 @@ module.exports = {
                     let chapters = []
                     let synopsis = ''
                     doc.querySelectorAll('.paragraph > p').forEach(r => synopsis = synopsis + r.textContent)
-                    doc.querySelectorAll('.chapters > div > a').forEach(r => chapters.push(r.textContent))
+                    doc.querySelectorAll('.chapters > div > a').forEach(r => {
+                        chapters.push({
+                            ch: r.textContent,
+                            id: id+'/'+r.textContent
+                        })
+                    })
                     callback({
-                        poster: doc.querySelector('.widget > picture > img').src,
+                        poster: doc.querySelector('.widget > picture > img').getAttribute('src'),
                         name: doc.querySelector('.w-col.w-col-7 > article > h1').textContent,
                         synopsis: synopsis,
                         chapters: chapters
